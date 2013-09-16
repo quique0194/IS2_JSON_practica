@@ -12,23 +12,34 @@ public class Main {
 		
 		System.out.println(a1.toJSON());
 		
-		Matricula m1 = new Matricula();
+		 Matricula m1 = new Matricula();
++    
++    m1.setIdAlumno(1111023149L);
++    m1.setIdCurso(742L);
++    m1.setNota(15.5);
++    
++    System.out.println(m1.toJSON());
+
+  Curso c1 = new Curso();
++    Profesor p1 = new Profesor();
++    
++    c1.setId(1L);
++    c1.setNombre("Teolog?a");
++    c1.setIdCursoSgt(2L);
++    c1.setProfesor(p1);
++    
++    System.out.println(c1.toJSON());
+
+		Horario h1 = new Horario();
+		h1.setId(1454545L);
+		h1.setDia(1);
+		h1.setHora_fin(7);
+		h1.setHora_fin(8);
+		h1.setId_curso(45L);
 		
-		m1.setIdAlumno(1111023149L);
-		m1.setIdCurso(742L);
-		m1.setNota(15.5);
+		System.out.println(h1.toJSON());
 		
-		System.out.println(m1.toJSON());
-		
-		Curso c1 = new Curso();
-		Profesor p1 = new Profesor();
-		
-		c1.setId(1L);
-		c1.setNombre("Teología");
-		c1.setIdCursoSgt(2L);
-		c1.setProfesor(p1);
-		
-		System.out.println(c1.toJSON());
+
 	}
 	
 	
